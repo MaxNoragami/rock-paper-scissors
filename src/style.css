@@ -1,0 +1,102 @@
+:root {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  background-color: #1E201E;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  height: 100svh;
+  position: relative;
+}
+
+.title {
+  color: #697565;
+  font-weight: bolder;
+}
+
+.choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+}
+
+.choice {
+  font-size: 4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  text-shadow: 0 0 10px #697565, 0 0 20px #697565, 0 0 30px #697565;
+  transition: text-shadow 0.2s ease;
+}
+
+.choice:hover {
+  text-shadow: 0 0 10px #ECDFCC, 0 0 20px #ECDFCC, 0 0 30px #ECDFCC;
+}
+
+p {
+  margin: 0;
+}
+
+#answerSection {
+  font-size: 2rem;
+  color: #697565;
+  font-weight: bold;
+  text-align: center;
+}
+
+.answer {
+  color: #ECDFCC;
+  font-weight: normal;
+}
+
+#scoreSection {
+  font-size: 1rem;
+  color: #697565;
+  font-weight: bold;
+  text-align: center;
+}
+
+.score {
+  color: #ECDFCC;
+  font-weight: normal;
+}
+
+#roundOutcome {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: snow;
+  visibility: hidden;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 2%;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 5%;
+  }
+}
+
+.to-home,
+.to-home:hover,
+.to-home:active,
+.to-home:visited {
+  color: #ECDFCC;
+  text-decoration: none;
+}
