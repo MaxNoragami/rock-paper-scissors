@@ -2,11 +2,14 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+* {
+  margin: 0;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1em;
   background-color: #1E201E;
-  margin: 0;
 }
 
 .container {
@@ -15,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2%;
-  height: 100svh;
+  height: 100dvh;
   position: relative;
 }
 
@@ -29,6 +32,7 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 5%;
+  margin: 3% 0;
 }
 
 .choice {
@@ -38,16 +42,12 @@ body {
   cursor: pointer;
   color: white;
   outline: none;
-  text-shadow: 0 0 10px #697565, 0 0 20px #697565, 0 0 30px #697565;
-  transition: text-shadow 0.2s ease;
+  filter: drop-shadow(0 0 10px #697565) drop-shadow(0 0 20px #697565) drop-shadow(0 0 30px #697565);
+  transition: filter 0.3s ease;
 }
 
 .choice:hover {
-  text-shadow: 0 0 10px #ECDFCC, 0 0 20px #ECDFCC, 0 0 30px #ECDFCC;
-}
-
-p {
-  margin: 0;
+  filter: drop-shadow(0 0 10px #ECDFCC) drop-shadow(0 0 20px #ECDFCC) drop-shadow(0 0 30px #ECDFCC);
 }
 
 #answerSection {
