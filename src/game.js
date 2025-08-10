@@ -56,16 +56,12 @@ export function setupGame(choice) {
               roundOutcome.textContent = "YOU WIN";
               roundOutcome.style.color = "lightgreen";
               playerScore += 1;
-              cpuScore -= 1;
               playerScoreElement.textContent = playerScore;
-              cpuScoreElement.textContent = cpuScore;
           }
           else if (!isWin) {
               roundOutcome.textContent = "YOU LOSE";
               roundOutcome.style.color = "tomato";
-              playerScore -= 1;
               cpuScore += 1;
-              playerScoreElement.textContent = playerScore;
               cpuScoreElement.textContent = cpuScore;
           }
       }
