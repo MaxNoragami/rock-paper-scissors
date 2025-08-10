@@ -27,6 +27,12 @@ body {
   font-weight: bolder;
 }
 
+@media (max-width: 340px) {
+  .title {
+    font-size: 1.7rem;
+  }
+}
+
 .choices {
   display: flex;
   flex-direction: row;
